@@ -1,0 +1,269 @@
+[
+  {
+    "courseNo": "CS100",
+    "crn": "10011",
+    "name": "Introduction to Programming",
+    "category": "Computer Science",
+    "instructor": "Fatima Al-Dosari",
+    "gender": "Male",
+    "section": "L01",
+    "status": "Validated",
+    "maxCapacity": 30,
+    "enrolled": 29,
+    "schedule": "Sun/Tue 04:00 - 05:15 PM",
+    "prerequisites": [],
+    "eligibleMajors": [
+      "Computer Science",
+      "Computer Engineering"
+    ]
+  },
+  {
+    "courseNo": "CS100",
+    "crn": "10012",
+    "name": "Introduction to Programming",
+    "category": "Computer Science",
+    "instructor": "Fatima Al-Dosari",
+    "gender": "Female",
+    "section": "L02",
+    "status": "Open",
+    "maxCapacity": 30,
+    "enrolled": 0,
+    "schedule": "Sun/Tue 05:30 - 06:45 PM",
+    "prerequisites": [],
+    "eligibleMajors": [
+      "Computer Science",
+      "Computer Engineering"
+    ]
+  },
+  {
+    "courseNo": "CS101",
+    "crn": "10000",
+    "name": "Web Development Fundamentals",
+    "category": "Computer Science",
+    "instructor": "Mahmoud Barhamgi",
+    "gender": "Male",
+    "section": "L01",
+    "status": "Open",
+    "maxCapacity": 30,
+    "enrolled": 0,
+    "schedule": "Sun/Tue 10:00 - 11:15 AM",
+    "prerequisites": [
+      "CS100"
+    ],
+    "eligibleMajors": [
+      "Computer Science"
+    ]
+  },
+  {
+    "courseNo": "CS101",
+    "crn": "10001",
+    "name": "Web Development Fundamentals",
+    "category": "Computer Science",
+    "instructor": "Mahmoud Barhamgi",
+    "gender": "Female",
+    "section": "L02",
+    "status": "Open",
+    "maxCapacity": 30,
+    "enrolled": 0,
+    "schedule": "Sun/Tue 11:30 - 12:45 PM",
+    "prerequisites": [
+      "CS100"
+    ],
+    "eligibleMajors": [
+      "Computer Science"
+    ]
+  },
+  {
+    "courseNo": "MATH101",
+    "crn": "10002",
+    "name": "Calculus",
+    "category": "Engineering",
+    "instructor": "John Doe",
+    "gender": "Male",
+    "section": "L01",
+    "status": "Validated",
+    "maxCapacity": 30,
+    "enrolled": 6,
+    "schedule": "Mon/Wed 09:00 - 10:15 AM",
+    "prerequisites": [],
+    "eligibleMajors": [
+      "Computer Science",
+      "Computer Engineering"
+    ]
+  },
+  {
+    "courseNo": "MATH101",
+    "crn": "10003",
+    "name": "Calculus",
+    "category": "Engineering",
+    "instructor": "John Doe",
+    "gender": "Male",
+    "section": "L02",
+    "status": "Open",
+    "maxCapacity": 30,
+    "enrolled": 0,
+    "schedule": "Mon/Wed 10:30 - 11:45 AM",
+    "prerequisites": [],
+    "eligibleMajors": [
+      "Computer Science",
+      "Computer Engineering"
+    ]
+  },
+  {
+    "courseNo": "MATH101",
+    "crn": "10004",
+    "name": "Calculus",
+    "category": "Engineering",
+    "instructor": "John Doe",
+    "gender": "Female",
+    "section": "L03",
+    "status": "Open",
+    "maxCapacity": 30,
+    "enrolled": 0,
+    "schedule": "Mon/Wed 12:00 - 01:15 PM",
+    "prerequisites": [],
+    "eligibleMajors": [
+      "Computer Science",
+      "Computer Engineering"
+    ]
+  },
+  {
+    "courseNo": "CS102",
+    "crn": "10005",
+    "name": "Operating Systems",
+    "category": "Computer Science",
+    "instructor": "Moutaz Saleh",
+    "gender": "Male",
+    "section": "L01",
+    "status": "Closed",
+    "maxCapacity": 30,
+    "enrolled": 0,
+    "schedule": "Sun/Tue 08:00 - 09:15 AM",
+    "prerequisites": [
+      "CS100",
+      "MATH101"
+    ],
+    "eligibleMajors": [
+      "Computer Science",
+      "Computer Engineering"
+    ]
+  },
+  {
+    "courseNo": "CS102",
+    "crn": "10006",
+    "name": "Operating Systems",
+    "category": "Computer Science",
+    "instructor": "Moutaz Saleh",
+    "gender": "Male",
+    "section": "L02",
+    "status": "Open",
+    "maxCapacity": 30,
+    "enrolled": 0,
+    "schedule": "Sun/Tue 09:30 - 10:45 AM",
+    "prerequisites": [
+      "CS100",
+      "MATH101"
+    ],
+    "eligibleMajors": [
+      "Computer Science",
+      "Computer Engineering"
+    ]
+  },
+  {
+    "courseNo": "CS102",
+    "crn": "10007",
+    "name": "Operating Systems",
+    "category": "Computer Science",
+    "instructor": "Moutaz Saleh",
+    "gender": "Female",
+    "section": "L03",
+    "status": "Open",
+    "maxCapacity": 30,
+    "enrolled": 0,
+    "schedule": "Mon/Wed 11:00 - 12:15 PM",
+    "prerequisites": [
+      "CS100",
+      "MATH101"
+    ],
+    "eligibleMajors": [
+      "Computer Science",
+      "Computer Engineering"
+    ]
+  },
+  {
+    "courseNo": "CS102",
+    "crn": "10008",
+    "name": "Operating Systems",
+    "category": "Computer Science",
+    "instructor": "Moutaz Saleh",
+    "gender": "Female",
+    "section": "L04",
+    "status": "Open",
+    "maxCapacity": 30,
+    "enrolled": 0,
+    "schedule": "Mon/Wed 01:30 - 02:45 PM",
+    "prerequisites": [
+      "CS100",
+      "MATH101"
+    ],
+    "eligibleMajors": [
+      "Computer Science",
+      "Computer Engineering"
+    ]
+  },
+  {
+    "courseNo": "CE201",
+    "crn": "10009",
+    "name": "Digital Logic Design",
+    "category": "Computer Engineering",
+    "instructor": "Nour El-Deen",
+    "gender": "Male",
+    "section": "L01",
+    "status": "Open",
+    "maxCapacity": 30,
+    "enrolled": 0,
+    "schedule": "Sun/Tue 02:00 - 03:15 PM",
+    "prerequisites": [
+      "MATH101"
+    ],
+    "eligibleMajors": [
+      "Computer Engineering"
+    ]
+  },
+  {
+    "courseNo": "CE201",
+    "crn": "10010",
+    "name": "Digital Logic Design",
+    "category": "Computer Engineering",
+    "instructor": "Nour El-Deen",
+    "gender": "Female",
+    "section": "L02",
+    "status": "Open",
+    "maxCapacity": 30,
+    "enrolled": 0,
+    "schedule": "Sun/Tue 03:30 - 04:45 PM",
+    "prerequisites": [
+      "MATH101"
+    ],
+    "eligibleMajors": [
+      "Computer Engineering"
+    ]
+  },
+  {
+    "courseNo": "MATH101",
+    "name": "Calculus",
+    "category": "Engineering",
+    "instructor": "John Doe",
+    "gender": "Male",
+    "section": "L04",
+    "crn": "10013",
+    "status": "Closed",
+    "maxCapacity": 20,
+    "enrolled": 0,
+    "schedule": "Sun/Tue 10:00 AM - 11:00 AM",
+    "prerequisites": [],
+    "eligibleMajors": [
+      "Engineering"
+    ]
+  }
+]
