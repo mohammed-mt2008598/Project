@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Learning Path</title>
+  <link rel="stylesheet" href="path.css" />
+</head>
+<body>
+  <div class="navigation">
+    <header>
+      <img src="Assets/Logo.png" alt="Qatar University Logo" class="logo" />
+      <div class="buttons">
+        <button class="browse" onclick="window.location.href='Search.html';">BROWSE</button>
+        <button class="logout" id="logoutbutton">LOGOUT</button>
+      </div>
+    </header>
+  </div>
+
+  <div class="container">
+    <h1 style="margin-bottom:20px;">My Learning Path</h1>
+
+    <div class="student-info">
+      <h2 id="studentName"></h2>
+      <p>ID: <span id="studentId"></span></p>
+      <p>Major: <span id="studentMajor"></span></p>
+    </div>
+    
+    <div class="path-lists">
+      <section>
+        <h3>✅ Completed</h3>
+        <ul id="completedList"></ul>
+      </section>
+    
+      <section>
+        <h3>📘 In Progress</h3>
+        <ul id="inProgressList"></ul>
+      </section>
+    
+      <section>
+        <h3>🕓 Pending</h3>
+        <ul id="pendingList"></ul>
+      </section>
+    </div>
+    
+  </div>
+
+  <script src="Path.js"></script>
+</body>
+</html>

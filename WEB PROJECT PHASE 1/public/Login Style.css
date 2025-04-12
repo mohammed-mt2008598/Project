@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'readex pro', sans-serif;
+}
+
+
+
+body{
+    background-image: url("Assets/qatar uni.png");
+    background-repeat: no-repeat;
+    object-fit: fill; 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+    
+.login-container{
+    background: rgba(255, 255, 255, 0.8);
+    width: 24rem; 
+    height: 23.5rem; 
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    
+    
+}
+
+.logo{
+    position: absolute;
+    width: 11rem;
+    height: auto;
+
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    padding: 13vh;
+    gap: 15px;
+    padding-left: 3vw;
+    font-size: 11px;
+    
+}
+
+input{
+    width: 18rem;
+    height: 2.8rem;
+    border: none;
+    border-bottom: 2px solid #2C2626;
+    background: transparent;
+    outline: none;
+    
+}
+
+img{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+button{
+    background: rgb(142,24, 55);
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 27px;
+    transition: 0.3s;
+    width: 18.3rem;
+    height: 2.7rem;
+    
+}
+
+button:hover{
+    background: rgb(93, 23, 23);
+}
+
+.login-title{
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 34px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(44,38, 38);
+}
+
+#errorMessage{
+    color: red; 
+    text-align: center;
+    margin-left: 2rem;
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+}
+
+
+@media (max-width: 800px) {
+
+    form {
+        padding-left: 40px;
+        
+    }
+
+    .logo{
+        width: 10rem;
+    }
+
+}
+
+
+
+

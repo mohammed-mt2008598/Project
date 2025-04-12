@@ -1,0 +1,28 @@
+
+.grades-container{
+  border-left:6px solid #7c0021;
+  background:rgba(255,255,255,0.95);
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+.class-section{margin-top:30px;padding:20px;border-radius:10px;
+               border-left:6px solid #7c0021;background:#fdfdfd;}
+.class-section h2{margin-bottom:10px;color:#7c0021;}
+.class-section table{width:100%;border-collapse:collapse;}
+.class-section th,.class-section td{padding:10px;border-bottom:1px solid #ddd;}
+.class-section input{width:100%;padding:5px;border-radius:5px;border:1px solid #ccc;}
+.class-section button{background:#7c0021;color:#fff;border:none;padding:5px 10px;
+                      border-radius:5px;cursor:pointer;}
+.class-section button:hover{opacity:.9;}
+
+.msg{
+  padding:12px 20px;
+  margin-bottom:15px;
+  border-radius:6px;
+  font-weight:bold;
+  border-left:6px solid;}
+
+.msg.success{background:#e9f8ec;color:#1b5e20;border-color:#1b5e20;}
+.msg.error  {background:#fdecea;color:#b71c1c;border-color:#b71c1c;}

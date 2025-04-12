@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+}
+
+.buttons button {
+  margin-left: 24px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: rgb(44, 38, 38);
+  font-weight: bolder;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px,
+              rgba(0, 0, 0, 0.12) 0 -12px 30px,
+              rgba(0, 0, 0, 0.12) 0 4px 6px,
+              rgba(0, 0, 0, 0.17) 0 12px 13px,
+              rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+
+#logoutBtn {
+  background-color: rgb(142, 24, 55);
+  color: rgb(44, 38, 38);
+  font-weight: bolder;
+  width: 100px;
+}
+
+#logoutBtn:hover {
+  background-color: rgb(93, 23, 23);
+}
+
+
+.course-group {
+  margin-bottom: 30px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #2c2626;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-tag {
+  background-color: #7c0021;
+  color: white;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+}
+
+.course-card {
+  border: 2px solid #2c2626;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  margin: 10px 0;
+  transition: transform 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-3px);
+}
+
+.course-card p {
+  margin: 4px 0;
+}
+
+.status-open       { border-left: 6px solid green; }
+.status-closed     { border-left: 6px solid red; }
+.status-validated  {
+  border-left: 6px solid green;
+  background-color: #e9f8ec;
+}
+
+.course-card button {
+  margin-top: 8px;
+}
+
+#createForm,
+#courseForm {
+  background-color: white;
+  border: 2px solid #2c2626;
+  padding: 20px;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#courseForm input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#courseForm button {
+  width: 100%;
+  padding: 10px 16px;
+  background-color: rgb(142, 24, 55);
+  color: rgb(44, 38, 38);
+  font-weight: bolder;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#courseForm button:hover {
+  background-color: rgb(93, 23, 23);
+}
+
+select { padding:10px; border:1px solid #ccc; border-radius:6px; }
+.field-label { margin-top:12px; font-weight:bold; display:block; }
+
+
+.inline-msg{
+  margin-top:8px;
+  padding:6px 10px;
+  font-size:0.85rem;
+  font-weight:bold;
+  border-radius:4px;
+  border-left:4px solid;
+}
+
+.inline-msg.success{background:#e9f8ec;color:#1b5e20;border-color:#1b5e20;}
+.inline-msg.error  {background:#fdecea;color:#b71c1c;border-color:#b71c1c;}
+
+
+
+@media (max-width: 700px) {
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .buttons button {
+    height: 2rem;
+    width: 4.5rem;
+    font-size: 0.6rem;
+  }
+}
+
+
