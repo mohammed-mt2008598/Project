@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-page="create-course">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a New Course</title>
+    <link rel="stylesheet" href="Search.css" />
+    <link rel="stylesheet" href="adminStyle.css" />
+    <style>
+      .field-label {
+         margin-top: 12px; 
+         font-weight: bold; 
+         display: block; 
+      }
+      select, input {
+         width: 100%; 
+         padding: 10px; 
+         border: 1px solid #ccc; 
+         border-radius: 6px; 
+      }
+      #errorMessage {
+         color: red;
+         font-weight: bold;
+         margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navigation">
+      <header>
+        <img src="Assets/Logo.png" alt="Qatar University Logo" class="logo" />
+        <div class="buttons">
+          <button class="browse" onclick="window.location.href='AdminDashboard.html';">DASHBOARD</button>
+          <button class="logout" id="logoutBtn">LOGOUT</button>
+        </div>
+      </header>
+    </div>
+
+    <div class="container">
+      <h1>Create a New Course</h1>
+
+      <form id="courseForm" class="create-form">
+        <input type="text" id="courseName"  placeholder="Course Name" required />
+        <input type="text" id="courseNo"    placeholder="Course Code (e.g. CS105)" required />
+        <input type="text" id="category"    placeholder="Category (e.g. Computer Science)" required />
+        <input type="text" id="instructor"  placeholder="Instructor Name" required />
+
+        <label class="field-label">Gender</label>
+        <select id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+
+        <label class="field-label">Status</label>
+        <select id="status">
+          <option value="Open" selected>Open</option>
+          <option value="Closed">Closed</option>
+        </select>
+
+        <input type="text" id="schedule" placeholder="Schedule (e.g. Sun/Tue 10:00 - 11:15 AM)" required />
+        <input type="number" id="maxCapacity" placeholder="Max Capacity" required />
+        <input type="text" id="prerequisites" placeholder="Prerequisites (comma-separated course numbers)" />
+        <input type="text" id="eligibleMajors" placeholder="Eligible Majors (comma-separated)" />
+
+        <button type="submit">ADD COURSE</button>
+        <p id="errorMessage"></p>
+      </form>
+    </div>
+
+    <script src="CreateCourse.js"></script>
+  </body>
+</html>

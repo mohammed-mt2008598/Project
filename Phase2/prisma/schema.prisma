@@ -1,0 +1,81 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "darwin-arm64", "windows"]
+}
+
+model User {
+  id               Int               @id @default(autoincrement())
+  username         String            @unique
+  password         String
+  role             String
+  name             String
+  major            String?
+  gender           String?
+  expertise        Expertise[]
+  classes          Class[]           @relation("InstructorClasses")
+  completedCourses CompletedCourse[]
+  registrations    Registration[]
+}
+
+model Expertise {
+  id     Int    @id @default(autoincrement())
+  name   String
+  userId Int
+  user   User   @relation(fields: [userId], references: [id])
+}
+
+model Course {
+  id              Int      @id @default(autoincrement())
+  courseNo        String   @unique
+  name            String
+  category        String
+  prerequisites   Course[] @relation("CoursePrerequisites")
+  prerequisiteFor Course[] @relation("CoursePrerequisites")
+  classes         Class[]
+  eligibleMajors  Major[]  @relation("CourseMajors")
+}
+
+model Class {
+  id               Int               @id @default(autoincrement())
+  crn              String            @unique
+  section          String
+  status           String
+  maxCapacity      Int
+  enrolled         Int
+  schedule         String
+  gender           String
+  instructorId     Int
+  courseId         Int
+  course           Course            @relation(fields: [courseId], references: [id])
+  instructor       User              @relation("InstructorClasses", fields: [instructorId], references: [id])
+  completedCourses CompletedCourse[]
+  registrations    Registration[]
+}
+
+model Major {
+  id      Int      @id @default(autoincrement())
+  name    String   @unique
+  courses Course[] @relation("CourseMajors")
+}
+
+model CompletedCourse {
+  id        Int    @id @default(autoincrement())
+  studentId Int
+  classId   Int
+  grade     String
+  student   User   @relation(fields: [studentId], references: [id])
+  class     Class  @relation(fields: [classId], references: [id])
+}
+
+model Registration {
+  id        Int   @id @default(autoincrement())
+  studentId Int
+  classId   Int
+  student   User  @relation(fields: [studentId], references: [id])
+  class     Class @relation(fields: [classId], references: [id])
+}

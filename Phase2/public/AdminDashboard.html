@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-page="admin">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+
+  <!-- base look & feel -->
+  <link rel="stylesheet" href="Search.css" />
+  <!-- admin‑specific tweaks -->
+  <link rel="stylesheet" href="adminStyle.css" />
+</head>
+
+<body>
+  <div class="navigation">
+    <header>
+      <img src="Assets/Logo.png" alt="Qatar University Logo" class="logo" />
+
+      <div class="buttons">
+        <button id="createBtn"
+                class="create-course"
+                onclick="window.location.href='CreateCourse.html';">
+          CREATE&nbsp;COURSE
+        </button>
+
+        <button class="logout" id="logoutBtn">LOGOUT</button>
+      </div>
+    </header>
+  </div>
+
+  <div class="container">
+    <h1>Admin Dashboard</h1>
+    <div id="coursesContainer"></div>
+  </div>
+
+  <script src="adminDashboard.js"></script>
+</body>
+</html>

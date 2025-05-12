@@ -1,0 +1,122 @@
+{
+  "users": [
+    {
+      "username": "mohammed",
+      "password": "123",
+      "role": "student",
+      "name": "Mohammed Talib",
+      "major": "Computer Science",
+      "gender": "Male",
+      "completedCourses": [
+        {
+          "crn": "10011",
+          "grade": "A"
+        },
+        {
+          "crn": "10000",
+          "grade": "C"
+        },
+        {
+          "crn": "10002",
+          "grade": "B"
+        }
+      ],
+      "currentlyRegistered": []
+    },
+    {
+      "username": "nasser",
+      "password": "125",
+      "role": "student",
+      "name": "Nasser AlKuwari",
+      "major": "Computer Engineering",
+      "gender": "Male",
+      "completedCourses": [
+        {
+          "crn": "10011",
+          "grade": "B"
+        },
+        {
+          "crn": "10002",
+          "grade": "A"
+        }
+      ],
+      "currentlyRegistered": [
+        {
+          "crn": "10000"
+        }
+      ]
+    },
+    {
+      "username": "sultan",
+      "password": "124",
+      "role": "student",
+      "name": "Sultan AlHitmi",
+      "major": "Computer Engineering",
+      "gender": "Male",
+      "completedCourses": [
+        {
+          "crn": "10002",
+          "grade": "B"
+        }
+      ],
+      "currentlyRegistered": [
+        "10011"
+      ]
+    },
+    {
+      "username": "latifa",
+      "password": "127",
+      "role": "student",
+      "name": "Latifa AlKubaisi",
+      "major": "Computer Science",
+      "gender": "Female",
+      "completedCourses": [
+        {
+          "crn": "10011",
+          "grade": "A"
+        },
+        {
+          "crn": "10002",
+          "grade": "A"
+        }
+      ],
+      "currentlyRegistered": []
+    },
+    {
+      "username": "admin",
+      "password": "adminpass",
+      "role": "admin",
+      "name": "Admin User"
+    },
+    {
+      "username": "mahmoud",
+      "password": "123",
+      "role": "instructor",
+      "name": "Mahmoud Barhamgi",
+      "expertise": [
+        "Web",
+        "Programming"
+      ]
+    },
+    {
+      "username": "moutaz",
+      "password": "123",
+      "role": "instructor",
+      "name": "Moutaz Saleh",
+      "expertise": [
+        "Web",
+        "Programming"
+      ]
+    },
+    {
+      "username": "john",
+      "password": "123",
+      "role": "instructor",
+      "name": "John Doe",
+      "expertise": [
+        "Web",
+        "Programming"
+      ]
+    }
+  ]
+}

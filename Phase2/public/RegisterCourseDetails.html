@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Details - Register</title>
+  <link rel="stylesheet" href="Search.css">
+</head>
+<body>
+  <div class="navigation">
+    <header>
+      <img src="Assets/Logo.png" alt="Qatar University Logo" class="logo">
+      <div class="buttons">
+        <button class="browse" onclick="window.location.href='Search.html';">BROWSE</button>
+        <button class="view-path" onclick="window.location.href='Path.html';">
+          <span>VIEW</span> PATH
+        </button>
+        <button class="logout" id="logoutbutton">LOGOUT</button>
+      </div>
+    </header>
+  </div>
+  
+  <div class="container">
+    <h1 id="course-title"></h1>
+    <div id="course-details"></div>
+
+    <div style="margin-top: 20px;">
+      <p id="errorMessage" style="color: red; display: none; font-weight: bold;"></p>
+      <button id="registerCourseBtn" style="
+        background-color: #2c2626;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+      ">
+        REGISTER FOR THIS COURSE
+      </button>
+    </div>
+    
+    <div style="margin-top: 20px;">
+      <a href="Register.html" style="text-decoration: none; font-weight: bold; color: rgb(93, 23, 23);">
+        &laquo; Back to Register
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const crn = params.get('crn');
+    fetch('/api/courses')
+      .then(response => response.json())
+      .then(data => {
+        const course = data.find(item => item.crn === crn);
+        if (course) {
+          document.getElementById('course-title').textContent = course.name;
+          document.getElementById('course-details').innerHTML = `
+            <p><strong>CRN:</strong> ${course.crn}</p>
+            <p><strong>Course Number:</strong> ${course.courseNo}</p>
+            <p><strong>Category:</strong> ${course.category}</p>
+            <p><strong>Instructor:</strong> ${course.instructor}</p>
+            <p><strong>Gender:</strong> ${course.gender}</p>
+            <p><strong>Section:</strong> ${course.section}</p>
+            <p><strong>Status:</strong> ${course.status}</p>
+            <p><strong>Seats:</strong> ${course.enrolled} / ${course.maxCapacity}</p>
+            <p><strong>Timings:</strong> ${course.schedule}</p>
+            <p><strong>Prerequisite:</strong> ${course.prerequisites}</p>
+          `;
+        } else {
+          document.getElementById('course-title').textContent = 'Course Not Found';
+        }
+      })
+      .catch(error => console.error('Error fetching course details:', error));
+
+    const logoutButton = document.getElementById('logoutbutton');
+    logoutButton.addEventListener('click', () => {
+      window.location.href = 'Login.html';
+    });
+    const registerBtn = document.getElementById('registerCourseBtn');
+  </script>
+
+<script src="Register.js"></script>
+</body>
+</html>
